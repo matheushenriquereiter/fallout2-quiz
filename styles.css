@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #eee;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.header {
+  height: 20%;
+  background-color: #346dee;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.score-marker-container {
+  height: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.score-info {
+  color: #000;
+}
+
+.score-marker {
+  font-size: 36px;
+  color: #346dee;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  background-color: #555;
+
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-title {
+  font-size: 34px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question-title {
+  font-size: 24px;
+}
+
+.answer {
+  color: #c0c0c0;
+  font-size: 20px;
+  display: block;
+}
+
+input[type="radio"] {
+  accent-color: #346dee;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 8px 20px;
+  background-color: #346dee;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-self: center;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info {
+  color: #000;
+}
+
+.developer-name,
+.dot {
+  color: #346dee;
+}
