@@ -7,10 +7,10 @@ const correctAnswers = ["B", "D", "A", "D"];
 let score = 0;
 
 const getUserAnswers = () => {
-  const userAnswers = [];
+  const userAnswers = correctAnswers.map((_, index) => {
+    const userAnswer = form[`inputQuestion${index + 1}`].value;
 
-  correctAnswers.forEach((_, index) => {
-    userAnswers.push(form[`inputQuestion${index + 1}`].value);
+    return userAnswer;
   });
 
   return userAnswers;
