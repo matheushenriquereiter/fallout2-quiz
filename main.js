@@ -16,6 +16,10 @@ const getUserAnswers = () => {
   return userAnswers;
 };
 
+const resetScore = () => {
+  score = 0;
+};
+
 const calculateUserScore = userAnswers => {
   userAnswers.forEach((userAnswer, index) => {
     const isUserAnswerCorrect = userAnswer === correctAnswers[index];
@@ -46,10 +50,9 @@ const showFinalScore = () => {
 const handleSubmit = event => {
   event.preventDefault();
 
-  score = 0;
-
   const userAnswers = getUserAnswers();
 
+  resetScore();
   calculateUserScore(userAnswers);
   showFinalScore();
   animateFinalResult();
